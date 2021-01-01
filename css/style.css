@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-size: 28px;
+    font-weight: 700;
+    font-style: oblique;
+    color: #ddd !important;
+    
+}
+.nav-link{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ddd !important;
+}
+.nav-link:hover{
+    text-shadow: 0 0 1px #111;
+}
+.tracker-bx {
+    /*    border: 1px solid;*/
+    width:50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 30%;
+    right: 100px;
+    background: white;
+    border-radius: 5px;
+}
+
+.track-header {
+    background: #dc3545;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+.tracker-body {
+    padding: 20px;
+}
+
+.check-bx {
+    padding: 10px 0;
+}
+
+.current-delvery {
+    background: #dc3545;
+    padding: 20px;
+    justify-content: flex-end;
+
+}
+
+.current-delvery p {
+    float: right;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.current-delvery > p > span {
+    font-size: 28px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.terminal {
+    padding: 0;
+    /*    border: 1px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal > .content {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: oblique;
+    text-transform: uppercase;
+    padding: 50px;
+    color: azure
+}
+
+.terminal > .content > span {
+    color: orange;
+}
+
+.services-header {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    font-style: oblique;
+    text-decoration: underline;
+    color: #dc3545;
+}
+
+.services-content {
+    padding: 20px 10px;
+    font-size: 18px;
+
+}
+
+.our-team {
+    width: 50%;
+}
+
+.teams {
+    background: #555;
+    margin: 10px;
+}
+
+.team-header {
+    display: flex;
+    justify-content: flex-start;
+/*    width: 28rem;*/
+}
+
+.team-header > .profile-pic {
+    height: 120px;
+    width: 120px;
+    border: 3px solid #dc3545;
+    border-radius: 50%;
+}
+
+.team-header > .profile-pic .img {
+    border-radius: 50%;
+}
+
+.team-header .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #dc3454;
+    letter-spacing: -1px;
+    font-style: oblique;
+    margin-left: 20px;
+    text-shadow: 0px 0px 1px white;
+}
+
+.team-header .name p {
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.team-body {
+    color: #ddd;
+    padding: 30px 25px;
+}
+footer{
+    width: 100%;
+    min-height: 80px;
+    background: #dc3454;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+}
+footer p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    font-style: oblique;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .tracker-bx {
+    position: static;
+        margin: 0 auto;
+        width: 100%;
+}
+    .our-team {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .terminal > .content {
+    font-size: 24px;
+        padding: 30px;
+}
+    .our-team {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .services-bx{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width:480px) {
+        .terminal > .content {
+    font-size: 24px;
+            padding: 20px;
+}
+    .our-team {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .team-header > .profile-pic {
+        height: 90px;
+        width: 90px;
+    }
+    .team-header .name h2{
+        font-size: 28px;
+    }
+}
